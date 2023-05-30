@@ -141,4 +141,19 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/algaworkscorp/pagarme-core-api-java</url>
+    </repository>
+  </distributionManagement>
+
+  <scm>
+    <connection>scm:git:ssh://git@github.com/algaworkscorp/pagarme-core-api-java.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/algaworkscorp/pagarme-core-api-java.git</developerConnection>
+    <url>https://github.com/algaworkscorp/pagarme-core-api-java.git</url>
+    <tag>pagarme-core-api-java-5.7.0</tag>
+  </scm>
 </project>
