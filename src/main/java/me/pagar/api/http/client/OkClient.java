@@ -23,15 +23,23 @@ import me.pagar.api.http.response.HttpResponse;
 import me.pagar.api.http.response.HttpStringResponse;
 import me.pagar.api.exceptions.APIException;
 
+import javax.xml.datatype.Duration;
+
 
 public class OkClient implements HttpClient {
     /**
      * Private variables to implement singleton pattern
      */
     private static final Object synRoot = new Object();
+    private static final int timeout = 30;
     private static HttpClient sharedInstance = null;
     private static okhttp3.OkHttpClient client = new okhttp3.OkHttpClient.Builder()
-            .addInterceptor(new HttpRedirectInterceptor(true)).build();
+            .addInterceptor(new HttpRedirectInterceptor(true))
+            .callTimeout(timeout, TimeUnit.SECONDS)
+            .connectTimeout(timeout, TimeUnit.SECONDS)
+            .writeTimeout(timeout, TimeUnit.SECONDS)
+            .readTimeout(timeout, TimeUnit.SECONDS)
+            .build();
 
     /**
      * Singleton access to the shared instance
