@@ -8,7 +8,7 @@
 
   <groupId>PagarmeCoreApiLib</groupId>
   <artifactId>pagarme-core-api-lib</artifactId>
-  <version>5.7.0.1</version>
+  <version>5.7.0.2-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>PagarmeCoreApiLib</name>
@@ -153,6 +153,6 @@
     <connection>scm:git:ssh://git@github.com/algaworkscorp/pagarme-core-api-java.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/algaworkscorp/pagarme-core-api-java.git</developerConnection>
     <url>https://github.com/algaworkscorp/pagarme-core-api-java.git</url>
-    <tag>pagarme-core-api-lib-5.7.0.1</tag>
+    <tag>pagarme-core-api-java-5.7.0</tag>
   </scm>
 </project>
